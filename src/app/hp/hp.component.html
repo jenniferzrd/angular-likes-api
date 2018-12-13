@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="text-center ptitle"> HOGWARTS SCHOOL</h1>
+  <div class="row">
+    <div *ngFor="let character of characters" class="col-4 d-flex justify-content-center flex-column align-items-center paddingcharacter bgwhite">
+
+      <div class="housename" [ngStyle]="{'background': getColor(character.house)}">
+        <span id="{{character.house}}">
+          {{character.house}}
+        </span>
+        <span>
+          <i *ngIf="character.favorite == true" (click)="favCharacter(character)" class="fa fa-star falike"></i>
+          <i *ngIf="character.favorite == false" (click)="favCharacter(character)" class="fa fa-star"></i>
+        </span>
+      </div>
+
+      <img src="{{character.image}}" width="200px">
+      <span class="charactername">{{character.name}}</span>
+
+    </div>
+  </div>
+</div>

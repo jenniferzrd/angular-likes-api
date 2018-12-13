@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DataService } from './service/data.service';
+import { Character } from './common/character';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  favItems: Character[];
+
+  constructor(private data: DataService){}
+
+  ngOnInit() {
+  	this.getFavItems();
+  }
+
+  getFavItems(): void {
+  	this.favItems = this.data.getFavoriteCharacters();
+  }
+
 }
