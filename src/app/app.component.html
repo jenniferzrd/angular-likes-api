@@ -1,7 +1,12 @@
 <div class="bg">
-<h5>My favorite characters :</h5>
-<app-hp></app-hp>
-<div class="fav" *ngFor="let favItem of favItems | slice:0:3">
-    {{favItem.name | uppercase}}
-</div>
+    <h1 class="text-center ptitle"> HOGWARTS SCHOOL</h1>
+    <div class="container">
+        <span class="favorite">My favorite characters :</span>
+        <div class="row d-flex justify-content-center">
+            <div class="fav" *ngFor="let favItem of favItems | slice:0:6">
+                <span class="col">{{favItem.name | uppercase}}</span>
+            </div>
+        </div>
+    </div>
+    <app-hp></app-hp>
 </div>

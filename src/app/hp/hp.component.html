@@ -1,5 +1,4 @@
 <div class="container">
-    <h1 class="text-center ptitle"> HOGWARTS SCHOOL</h1>
   <div class="row">
     <div *ngFor="let character of characters" class="col-4 d-flex justify-content-center flex-column align-items-center paddingcharacter bgwhite">
 
@@ -14,8 +13,9 @@
       </div>
 
       <img src="{{character.image}}" width="200px">
-      <span class="charactername">{{character.name}}</span>
-
+      <div class="charactername" [ngStyle]="{'background': getColor(character.house)}">
+      <span>{{character.name}}</span>
+    </div>
     </div>
   </div>
 </div>

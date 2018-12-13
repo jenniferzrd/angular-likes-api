@@ -2,37 +2,31 @@
     color:red;
 }
 
-h1 {
-    font-weight: bold;
-    text-align:center;
-    color: rgb(59, 59, 59);
-    font-family: 'EB Garamond', serif;
-}
-
 .paddingcharacter {
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
 .bgwhite {
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .housename {
     font-weight: bold;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Bree Serif', serif;
     text-transform: uppercase;
-    border-top: solid 1px grey;
-    border-left: solid 1px grey;
-    border-right: solid 1px grey;
     padding: 10px 20px 5px 20px;
     color: white;
+    font-size: 18px;
 }
 
 .charactername {
-    font-family: 'EB Garamond', serif;
-    border-bottom: solid 1px grey;
-    border-left: solid 1px grey;
-    border-right: solid 1px grey;
+    font-family: 'Lora', serif;
     padding: 5px 20px 10px 20px;
+    color: white;
+    font-size: 14px;
+}
+
+img {
+    filter: grayscale(100%);
 }

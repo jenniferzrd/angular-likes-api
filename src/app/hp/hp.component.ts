@@ -37,13 +37,15 @@ export class HpComponent implements OnInit {
   getColor(house) { 
     switch (house) {
       case 'Gryffindor':
-        return '#ff3f34';
+        return 'linear-gradient(to right, #e52d27, #b31217)';
       case 'Slytherin':
-        return '#05c46b';
+        return 'linear-gradient(to right, #093028, #237a57)';
       case 'Hufflepuff':
-        return '#ffa801';
+        return 'linear-gradient(to right, #e65c00, #f9d423)';
         case 'Ravenclaw':
-        return '#3c40c6'
+        return 'linear-gradient(to left, #314755, #26a0da)';
+      case '': 
+      return 'linear-gradient(to left, #0f2027, #203a43, #2c5364)';
     }
   }
   
